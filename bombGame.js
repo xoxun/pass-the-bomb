@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       stopAudio(); // 카운트다운 소리 중지
       playAudio("explosion"); // 폭발 소리 재생
-      settingContainer.style.display = "flex";
-
       bombImage.src = explosionBombImage; // 터지는 이미지로 변경
       statusDisplay.textContent = "💥 폭탄이 터졌습니다! 💥";
       timerDisplay.textContent = "게임 종료!";
+
+      settingContainer.style.display = "flex";
     }, randomTime * 1000);
   }
 });
