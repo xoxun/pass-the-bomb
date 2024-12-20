@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const bombImage = document.getElementById("bomb_img"); // 폭탄 이미지
   const settingContainer = document.getElementById("game-setting"); // 폭탄 이미지
 
-  const defaultBombImage = "assets/bomb_img2.png"; // 터지는 순간 이미지
-  const explosionBombImage = "assets/bomb_img3.png"; // 터지는 순간 이미지
+  const defaultBombImage =
+    "https://xoxun.github.io/pass-the-bomb/assets/bomb_img2.png"; // 터지는 순간 이미지
+  const explosionBombImage =
+    "https://xoxun.github.io/pass-the-bomb/assets/bomb_img3.png"; // 터지는 순간 이미지
 
   let countdownInterval; // 타이머 Interval
   let explosionTimeout; // 폭발 Timeout
