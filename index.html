@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pass the Bomb</title>
+    <link rel="stylesheet" href="bombGame.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="audioContainer">
+      <source id="audioSource" src="" />
+      Your browser does not support the audio format.
+    </audio>
+
+    <h1>Pass the Bomb!</h1>
+    <div id="game-setting">
+      <label for="maxTime">최대 시간 </label>
+      <input type="number" id="maxTime" min="10" value="20" />
+      <button id="startButton">게임 시작</button>
+    </div>
+
+    <img id="bomb_img" src="assets/bomb_img2.png" />
+
+    <h2 id="status">폭탄이 곧 터집니다...</h2>
+    <p id="timer">남은 시간: 준비 중...</p>
+
+    <script src="bombGame.js"></script>
+  </body>
+</html>
